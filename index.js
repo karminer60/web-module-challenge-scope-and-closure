@@ -83,11 +83,10 @@ finalScore(inning, 9) might return:
 
 function finalScore(inning , numberInnings){
 
-  let homeAwayScoresObject =  numberInnings.forEach(function(item){
-    return {"Home": item.inning , "Away": item.inning} ; 
-  })
-
-  return homeAwayScoresObject;
+ for( let i=0; i<= numberInnings; i++){
+    return {"Home": inning(i) , "Away": inning(i)}; 
+ }
+  
 
 }
 
@@ -113,7 +112,7 @@ and returns the score at each pont in the game, like so:
 
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
+function scoreboard(getinningScore, inning,numberInnings) {
   /* CODE HERE */
 }
 
