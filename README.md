@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+closure means that a function can use the variables of another function that have been closed or called but are in a higher level function. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
