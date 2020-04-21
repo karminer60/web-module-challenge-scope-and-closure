@@ -28,10 +28,15 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * counter2 has the counter outside the function which gives the counter global scope. 
+ * 
  * 2. Which of the two uses a closure? How can you tell?
+ * 
+ * counter1 uses a closure because it has the counter inside it.
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
+ * counter1 would be preferable when you want to run multiple counters.
 */
 
 // counter1 code
