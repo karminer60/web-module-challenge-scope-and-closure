@@ -81,9 +81,13 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
+function finalScore(inning , numberInnings){
 
-  /*Code Here*/
+  let homeAwayScoresObject =  numberInnings.forEach(function(item){
+    return {"Home": item.inning , "Away": item.inning} ; 
+  })
+
+  return homeAwayScoresObject;
 
 }
 
