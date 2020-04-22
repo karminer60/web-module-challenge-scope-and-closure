@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure means that a function can use the variables of another function that have been closed or called but are in a higher level function. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+closure is used in const dansRoll. The same function is called twice and the first time it is closed.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+the function they call is the same
+
 c. What is the lexical scope of `newRoll`? 
+
+it is bound to the function 
 
 ### Task 3 - Stretch Goals
 
