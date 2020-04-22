@@ -131,7 +131,7 @@ function scoreboard(getInningScore, inning, numberInnings) {
   let away=0;
   for( let i=1; i<= numberInnings; i++){
    let eachInning = getInningScore(inning); 
-   inningScoreArray.push( i + "th inning: " + eachInning["Away"] + " - " + eachInning["Home"]);
+   inningScoreArray.push( i + " inning: " + eachInning["Away"] + " - " + eachInning["Home"]);
    home += eachInning["Away"];
    away += eachInning["Home"];
   }
