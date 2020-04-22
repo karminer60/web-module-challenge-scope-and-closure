@@ -127,23 +127,18 @@ function getInningScore(inning){
 
 function scoreboard(getInningScore, inning, numberInnings) {
   let inningScoreArray = [];
-  for( let i=1; i< numberInnings; i++){
+  let home= 0;
+  let away=0;
+  for( let i=1; i<= numberInnings; i++){
    let eachInning = getInningScore(inning); 
-   inningScoreArray.push( i+1 + "th inning: " + eachInning);
- }
- 
-
-  let home  = 0;
-  let away = 0;
-
-  for(let i  = 0; i< home.length ; i++){
-    let homeTeam = home += eachInning(home(i)); 
-    let awayTeam = away += eachInning(away(i)); 
+   inningScoreArray.push( i + "th inning: " + eachInning["Away"] + " - " + eachInning["Home"]);
+   home += eachInning["Away"];
+   away += eachInning["Home"];
   }
-  let endResult = homeTeam + " - " + awayTeam;
- 
-  return eachInningText + endResult; 
-};
+ let endResult = "Final Score: " + home +" - " + away;
+  
+ return [inningScoreArray, endResult];
+  };  
 
 console.log(scoreboard(getInningScore, inning, 4));
 
