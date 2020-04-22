@@ -66,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+closure is
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+the first time
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll's scope 
 
 ### Task 3 - Stretch Goals
 
